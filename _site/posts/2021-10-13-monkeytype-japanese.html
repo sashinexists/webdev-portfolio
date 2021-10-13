@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<script src="https://kit.fontawesome.com/828b8f0bbf.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="/assets/style.css" />
+<title>Japanese Support for Monkeytype</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+    <a href="/">
+        <h2 class="main-title">Sashin Web Dev</h2>
+    </a>
+    <nav class="menu">
+    <ul class="menu-link-list">
+        <li class="menu-link-list-item">
+            <a class="menu-link" href="/about.html">About</a>
+        </li>
+        <li class="menu-link-list-item">
+            <a class="menu-link" href="/skills">Skills</a>
+        </li>
+        <li class="menu-link-list-item">
+            <a class="menu-link" href="/interests">Interests</a>
+        </li>
+        <li class="menu-link-list-item">
+            <a class="menu-link" href="/contact">Contact</a>
+        </li>
+    </ul>
+</nav>
+</header>
+    
+    <main class="main"><div class="post post_Japanese Support for Monkeytype">
+  <h1 class="post-title">Japanese Support for Monkeytype</h1>
+   <div class="img-box">
+    <img class="img" src="/images/monkeytype-japanese_screenshot.png"/>
+</div>
+  <span class="post-brief">I successfully was able to add Japanese language support to the popular speedtyping website.</span>
+  <span class="post-content post-content_Japanese Support for Monkeytype">
+    <h3>About the Project</h3>
+<p>MonkeyType is arguably the best website for speedtyping practice on internet and bills itself as the most configurable. This view point seems almost unanimous among the speedtyping communities I have visited.</p>
+<p>One of the coolest features they have is their out of the box support for many languages - they even support coding languages such as Rust.</p>
+<p>Unfortunately, at the time they did not support Japanese… so I went and fixed that…</p>
+<hr />
+<h3>The Tech Behind it</h3>
+<p>This was a really a simple affair. A new “language” in MonkeyType is submitted as a list of words in a JSON file.</p>
+<p><a href="https://github.com/Miodec/monkeytype/blob/master/static/languages/japanese_hiragana.json">You can see my submission here.</a></p>
+<p>Relative to the amount of work that was put in, I feel disproportionately proud of this as a pull request of mine was accepted in one of the most popular typing sites there is, used by millions around the world.</p>
+<p>I thought it would be a good idea to learn useful Japanese words while learning how to touch type in Japanese Kana.</p>
+<p>One complication was that MonkeyType would not work with Kanji. Japanese is comprised of three scripts; Kanji, Hiragana and Katakana. Kanji communicates meaning whereas Hiragana and Katakana are phonetic, which means that they only express sound - just like English letters. As such every word can be expressed in Hiragana only.s</p>
+<p>What I did was find a list of commonly-used Japanese words and copied and pasted it into <a href="">Visual Studio Code</a> and applied a series of regex transformations on it so I could extract a list comprising of nothing but the hiragana versions of the words. Which I then added to the JSON file and submitted.</p>
+<p>In addition to this I submitted a list of common-use loan words as a separate language. Loan words are Japanese words that are borrowed from other languages. </p>
+<p>They are written in Katakana.</p>
+<ul>
+<li>オレンジジュース → “Orenji Jyushuu” → “Orange Juice”</li>
+<li>テレビ → “Telebi” → “television”</li>
+<li>トイレ → “Toire” → “toilet”</li>
+<li>スマホ → “Sumaho” → “Smartphone”</li>
+</ul>
+<p>The pull request for <a href="https://github.com/Miodec/monkeytype/blob/master/static/languages/japanese_katakana.json">this was also accepted</a>.</p>
+
+  </span>
+</div></main>
+    <footer class="footer">
+    Made with <a href="https://www.youtube.com/watch?v=YcW6vOsl0rY">love</a> and <a href="https://cobalt-org.github.io">cobalt</a>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<script src="https://kit.fontawesome.com/828b8f0bbf.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="/assets/style.css" />
+<title>Japanese Verb Transformer</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+    <a href="/">
+        <h2 class="main-title">Sashin Web Dev</h2>
+    </a>
+    <nav class="menu">
+    <ul class="menu-link-list">
+        <li class="menu-link-list-item">
+            <a class="menu-link" href="/about.html">About</a>
+        </li>
+        <li class="menu-link-list-item">
+            <a class="menu-link" href="/skills">Skills</a>
+        </li>
+        <li class="menu-link-list-item">
+            <a class="menu-link" href="/interests">Interests</a>
+        </li>
+        <li class="menu-link-list-item">
+            <a class="menu-link" href="/contact">Contact</a>
+        </li>
+    </ul>
+</nav>
+</header>
+    
+    <main class="main"><div class="post post_Japanese Verb Transformer">
+  <h1 class="post-title">Japanese Verb Transformer</h1>
+   <div class="img-box">
+    <img class="img" src="/images/japanese-word-transformer_screenshot.png"/>
+</div>
+  <span class="post-brief">A terminal program that allows you to input a Japanese verb and transform it to any of its other forms.</span>
+  <span class="post-content post-content_Japanese Verb Transformer">
+    <h3>About the Project</h3>
+<p>I am <a href="https://sashinexists.com/letter/learning-and-language">learning Japanese</a>.</p>
+<p>In grammar, we have this concept of conjugation.</p>
+<p>Where a word can be changed so that its meaning is altered.</p>
+<p>Tense is a good example of this:</p>
+<ul>
+<li>Walk</li>
+<li>Walking</li>
+<li>Walks</li>
+</ul>
+<p>Plurality is another one:</p>
+<ul>
+<li>Tree</li>
+<li>Trees</li>
+</ul>
+<p>In English, this can get quite tricky. </p>
+<p>There isn’t a set of neat rules that you can apply to any word to change it to a plural for example.</p>
+<p>Consider:</p>
+<ul>
+<li>House → Houses</li>
+<li>Mouse → Mice</li>
+</ul>
+<p>You just have to remember them - which is rather inelegant.</p>
+<p>The Japanese Teaching Youtuber <a href="https://www.youtube.com/channel/UCkdmU8hGK4Fg3LghTVtKltQ">Cure Dolly sensei</a> has described Japanese has being like a perfect crystal. </p>
+<p>Completely regular and therefore beautiful. You only need to remember a finite set of word transformations and you can then apply them to any word with almost no excepts at all.</p>
+<p>It occurred to me that what follows logically, is that it would be easy write a program that took any Japanese word and transformed it into any of its other forms… so I did.</p>
+<p>(Note: Cure Dolly sensei often talks about how the European concept of “word conjugation” does not neatly apply to Japanese and criticises the term’s use in Japanese textbooks. What seems to be conjugation is actually separate words added on, as there are no spaces in between words in Japanese,  Westerners can easily mistake the addition of another word for conjugation).</p>
+<hr />
+<h3>The Tech Behind it</h3>
+<p>This is a fairly simple script that was written in Rust and run in the Terminal.</p>
+<p>It is very simple: when you run the script it asks you to type a Japanese Word and then asks you which form you would like to change it to and performs the transformation.s</p>
+<p>I store a list of rules for all of the possible word transformations in a separate JSON file which the script then applies.</p>
+<p>I wish to expand this in the future and even create a test mode that asks you to transform a verb and checks it against the right answer. </p>
+<p>I would also like to integrate it with a Jisho - that is; Japanese dictionary - API. This way it can verify if the input words are correct and even implement suggestions.</p>
+<p>I would also like to create a graphical interface to the app which I will likely do when I am learning how to use GTK4 to create desktop apps for Linux.</p>
+
+  </span>
+</div></main>
+    <footer class="footer">
+    Made with <a href="https://www.youtube.com/watch?v=YcW6vOsl0rY">love</a> and <a href="https://cobalt-org.github.io">cobalt</a>
+</footer>
+  </body>
+</html>

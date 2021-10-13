@@ -1,0 +1,8 @@
+<div class="post post_{{ post.title }}">
+  <h1 class="post-title">{{ post.title }}</h1>
+  {% assign img_url = post.data.banner_url %} {% include "_image.liquid" %}
+  <span class="post-brief">{{post.data.brief}}</span>
+  <span class="post-content post-content_{{ post.title }}">
+    {{ page.content }}
+  </span>
+</div>

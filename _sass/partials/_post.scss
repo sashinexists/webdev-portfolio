@@ -1,0 +1,110 @@
+.post {
+  background: $eerie-black;
+  margin: 3rem 0 6rem 0;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 76.8rem;
+  max-width: 100%;
+  border-radius: 1rem;
+
+  .post-title {
+    margin: 0 0 0.5rem 0;
+    &:hover {
+      color: $platinum;
+    }
+  }
+
+  .post-brief {
+    background: darken($eerie-black, 2.5%);
+    padding: 3rem;
+    border-radius: 1rem;
+  }
+
+  .post-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    background: $eerie-black;
+    margin: 3rem 0; 
+
+    p, h3, ol, ul {
+        width: 100%;
+    }
+
+    ol,
+    ul {
+      margin-left: 4rem;
+
+      li {
+        padding: 0.5rem 0;
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+        text-rendering: optimizeLegibility;
+      }
+    }
+
+    .footnotes-list {
+      font-size: 1.4rem;
+      margin: 4rem;
+
+      .footnote-item {
+        font-size: 1.4rem;
+
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    p {
+      padding: 1.725rem 0;
+      font-size: 1.7rem;
+      line-height: 2.4rem;
+      text-rendering: optimizeLegibility;
+    }
+
+    blockquote {
+      text-align: center;
+      margin: 2rem 0;
+      font-size: 2.4rem;
+      font-weight: 300;
+
+      p {
+        font-size: inherit;
+        line-height: 3.6rem;
+
+        .longquote {
+          font-size: 1.8rem;
+          font-weight: 300;
+          line-height: 1rem;
+        }
+      }
+    }
+
+    .longquote {
+      font-size: 1.8rem;
+      font-weight: 300;
+
+      p {
+        font-size: inherit;
+        text-align: left;
+      }
+    }
+
+    hr {
+      border: none;
+      text-align: center;
+      font-weight: 300;
+      margin: 2.4rem 0;
+
+      &::after {
+        content: "~";
+        text-align: center;
+        font-size: 3.6rem;
+      }
+    }
+  }
+}

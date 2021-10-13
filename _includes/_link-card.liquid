@@ -1,0 +1,9 @@
+<a href="{{post.permalink}}" class="card link-card card_{{ post.title }}">
+  <h3 class="card-title link-card-title">{{ post.title }}</h3>
+  {% assign img_url = post.data.banner_url %} {% include "_image.liquid" %}
+  <span class="card-brief card-brief_{{ post.title }}">
+    <p>{{ post.data.brief }}</p>
+  </span>
+  {% assign btn_text = "More about this Project" %} {% assign btn_icon = "fas
+  fa-laptop-code" %} {% include "_button.liquid" %}
+</a>

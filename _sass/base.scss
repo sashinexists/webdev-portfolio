@@ -1,0 +1,69 @@
+@import "partials/fonts";
+@import "partials/colors";
+@import "partials/menu";
+@import "partials/header";
+@import "partials/image";
+@import "partials/buttons";
+@import "partials/card";
+@import "partials/post";
+@import "partials/footer";
+
+
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: $rich-black;
+  color: $dark-medium-gray;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-align: justify;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+
+  p {
+    padding: 1.725rem 0;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+.main-title {
+  font-weight: 300;
+  font-size: 3.6rem;
+  color: $middle-green;
+}
+
+a {
+  color: $middle-green;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    color: $turquoise-green;
+  }
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 2.4rem;
+}

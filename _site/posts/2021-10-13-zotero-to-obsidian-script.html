@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<script src="https://kit.fontawesome.com/828b8f0bbf.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="/assets/style.css" />
+<title>Zotero-to-Obsidian scrip</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+    <a href="/">
+        <h2 class="main-title">Sashin Web Dev</h2>
+    </a>
+    <nav class="menu">
+    <ul class="menu-link-list">
+        <li class="menu-link-list-item">
+            <a class="menu-link" href="/about.html">About</a>
+        </li>
+        <li class="menu-link-list-item">
+            <a class="menu-link" href="/skills">Skills</a>
+        </li>
+        <li class="menu-link-list-item">
+            <a class="menu-link" href="/interests">Interests</a>
+        </li>
+        <li class="menu-link-list-item">
+            <a class="menu-link" href="/contact">Contact</a>
+        </li>
+    </ul>
+</nav>
+</header>
+    
+    <main class="main"><div class="post post_Zotero-to-Obsidian scrip">
+  <h1 class="post-title">Zotero-to-Obsidian scrip</h1>
+   <div class="img-box">
+    <img class="img" src="/images/zotero-to-obsidian_screenshot.png"/>
+</div>
+  <span class="post-brief">A script that converts data about your resources from Zotero to Obsidian</span>
+  <span class="post-content post-content_Zotero-to-Obsidian scrip">
+    <h3>About this Project</h3>
+<p>I wrote this script for my own personal use but shared it through Github so anyone else can also benefit.</p>
+<p><a href="https://zotero.org">Zotero</a> is an open-source reference manager that is used widely by academics across the world. It allows you to keep track of the literature you use and the notes you take on it. It also has features such as being able to generate citations and bibliographies in a single click. When you add a paper, article or book on Zotero it is automatically able to fetch relevant data including the authors, publication date, brief and journals.</p>
+<p><a href="https://obsidian.md">Obsidian</a> is my favourite app or all time. I am currently writing this text in it right now. I use it to write anything that needs to be written and to organise everything in my life. I have written more about it <a href="https://sashinexists.com/letter/notes-about-notes-bonus-notes-included/">here</a>.</p>
+<p>This script that I wrote simply takes a look at all my resources in Zotero and generates markdown files that can be viewed and linked to from Obsidian.</p>
+<p>So, I have a separate markdown plaintext file for each of the books, articles, paper etc that I have read and can reference them easily in any of the notes I write.</p>
+<hr />
+<h1>The Tech Behind it</h1>
+<p>This script was written entirely in Rust. It looks at the data from Zotero, which is stored as a JSON file it then reads a set of markdown templates that I have made and writes the Zotero data into the templates.</p>
+
+  </span>
+</div></main>
+    <footer class="footer">
+    Made with <a href="https://www.youtube.com/watch?v=YcW6vOsl0rY">love</a> and <a href="https://cobalt-org.github.io">cobalt</a>
+</footer>
+  </body>
+</html>
