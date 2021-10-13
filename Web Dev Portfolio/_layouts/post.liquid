@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include "_head.liquid" %}
+  </head>
+
+  <body>
+    {% include "_header.liquid" %}
+    {%assign post = page %}
+    <main class="main">{% include "_post.liquid" %}</main>
+    {% include "_footer.liquid" %}
+  </body>
+</html>

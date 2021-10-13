@@ -1,0 +1,7 @@
+
+site:
+  title: Sashin Web Dev
+  description: Let me make your next website
+  base_url: http://sashin.dev
+posts:
+  rss: rss.xml
